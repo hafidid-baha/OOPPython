@@ -11,3 +11,6 @@ class Order:
     def addItem(self,item):
         self.items.append(item)
         return self.items
+
+    def showItems(self):
+        print(*items)
