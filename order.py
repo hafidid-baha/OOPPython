@@ -7,3 +7,7 @@ class Order:
 
     def __str__(self):
         return "order id id : "+str(self.order_id)
+
+    def addItem(self,item):
+        self.items.append(item)
+        return self.items
