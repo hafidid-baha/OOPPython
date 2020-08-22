@@ -5,4 +5,6 @@ c = Customer("hafid","id-baha")
 print(c)
 
 o = Order(111)
-print(o)
+o.addItem('tid')
+o.addItem('javel')
+o.showItems()
