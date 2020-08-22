@@ -7,8 +7,8 @@ class Order:
     def __str__(self):
         return "order id id : "+str(self.order_id)
 
-    def addItem(self,item):
-        self.items.append(item)
+    def addItem(self,item,price):
+        self.items.append(item+':'+price)
         return self.items
 
     def showItems(self):
