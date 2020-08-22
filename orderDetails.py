@@ -1,10 +1,10 @@
 class OrderDetails:
     
-    def __init__(customer,order):
+    def __init__(self,customer,order):
         self.customer = customer
         self.order = order
         self.orderPrice = 0
-        calculateOrderPrice()
+        self.calculateOrderPrice()
 
     def calculateOrderPrice(self):
         for item in self.order.items:
@@ -15,4 +15,5 @@ class OrderDetails:
 
     def __str__(self):
         print(self.customer.fname+" "+self.customer.lname)     
-        print(len(self.customer.items)+" items ,price = "+self.orderPrice)   
+        print(str(len(self.order.items))+" items ,price = "+str(self.orderPrice))   
+        return ""
